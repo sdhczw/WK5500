@@ -2,6 +2,7 @@
 #include "stdio.h"
 #include "config.h"
 #include "util.h"
+#include "dhcp.h"
 #include "W5500\w5500.h"
 #include "W5500\socket.h"
 #include "W5500\SPI2.h"
@@ -53,7 +54,15 @@ uint32_t my_time;
 uint32_t presentTime;
 void Timer2_ISR(void)
 {
+    static u16 Tick_1S    =0;
+  
     my_time++;
+    if(++Tick_1S >= 1000)
+    {
+        Tick_1S = 0;
+        Dhcp_Tick();
+        //Dns_Tick();
+    }
 }
 
 void WIZ_Config(void)
@@ -64,7 +73,8 @@ void WIZ_Config(void)
 
 u8 Dhcp_Task(void)
 {      
-    return 0;
+    //do_dhcp();
+    return do_dhcp();
 }
 /*******************************************************************************
 * Ãû³Æ: do_dns

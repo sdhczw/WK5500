@@ -6,7 +6,7 @@
 #include <stdarg.h>
 #include "systick.h"
 #include "led.h"
-
+#include "dhcp.h"
 #ifdef __GNUC__
   /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
      set to 'Yes') calls __io_putchar() */
@@ -18,7 +18,7 @@
 
 extern CONFIG_MSG Config_Msg;
 extern CHCONFIG_TYPE_DEF Chconfig_Type_Def;
-
+extern DHCP_Get     DHCP_GET;
 extern uint8 txsize[MAX_SOCK_NUM];
 extern uint8 rxsize[MAX_SOCK_NUM];
 
@@ -30,25 +30,19 @@ extern uint8 SubNet[4];
 extern uint8 Enable_DHCP;
 extern uint8 Dest_IP[4] ;
 extern uint16 Dest_PORT ;
-
+uint8 dhcp_ok=0;
+uint32	dhcp_time= 0;																		/*DHCP运行计数*/
+uint8  ip_from;	        //DHCP
 void Set_network(void)
 {
     uint8 tmp_array[6];
     uint8 i;
-
+     ip_from       = IP_FROM_DHCP;	        //DHCP
     // MAC ADDRESS
     for (i = 0 ; i < 6; i++) Config_Msg.Mac[i] = MAC[i];
-    // Local IP ADDRESS
-    Config_Msg.Lip[0] = IP[0]; Config_Msg.Lip[1] = IP[1]; Config_Msg.Lip[2] = IP[2]; Config_Msg.Lip[3] = IP[3];
-    // GateWay ADDRESS
-    Config_Msg.Gw[0] = GateWay[0]; Config_Msg.Gw[1] = GateWay[1]; Config_Msg.Gw[2] = GateWay[2]; Config_Msg.Gw[3] = GateWay[3];
-    // Subnet Mask ADDRESS
-    Config_Msg.Sub[0] = SubNet[0]; Config_Msg.Sub[1] = SubNet[1]; Config_Msg.Sub[2] = SubNet[2]; Config_Msg.Sub[3] = SubNet[3];
 
     setSHAR(Config_Msg.Mac);
-    setSUBR(Config_Msg.Sub);
-    setGAR(Config_Msg.Gw);
-    setSIPR(Config_Msg.Lip);
+
         
     // Set DHCP
     Config_Msg.DHCP = Enable_DHCP;
@@ -70,6 +64,53 @@ void Set_network(void)
     printf("----------------------------------------- ");
 
     getSHAR(tmp_array);
+    printf("\r\nMAC : %.2X.%.2X.%.2X.%.2X.%.2X.%.2X\r\n", tmp_array[0],tmp_array[1],tmp_array[2],tmp_array[3],tmp_array[4],tmp_array[5]);
+}
+
+/*******************************************************************************
+* 名称: W5500_Init
+* 功能: 配置W5500的IP地址
+* 形参:       
+* 返回: 无
+* 说明: ip_from=0,则dhcp,其他则静态IP
+*******************************************************************************/
+void set_w5500_ip(u8 ip_from)
+{	
+   uint8 tmp_array[6];
+  /*复制定义的配置信息到配置结构体*/
+  memcpy(Config_Msg.Mac, MAC, 6);
+  
+  
+  /*使用DHCP获取IP参数，需调用DHCP子函数*/		
+  if(ip_from==0)								
+  {
+    /*复制DHCP获取的配置信息到配置结构体*/
+    if(dhcp_ok==1)
+    {
+      printf(" IP from DHCP\r\n");		 
+      memcpy(Config_Msg.Lip,DHCP_GET.lip, 4);
+      memcpy(Config_Msg.Sub,DHCP_GET.sub, 4);
+      memcpy(Config_Msg.Gw,DHCP_GET.gw, 4);
+      memcpy(Config_Msg.DNS_Server_IP,DHCP_GET.dns,4);
+    }
+    
+  }
+  else
+  {
+    memcpy(Config_Msg.Lip,IP,4);
+    memcpy(Config_Msg.Sub,SubNet,4);
+    memcpy(Config_Msg.Gw,GateWay,4);
+    memcpy(Config_Msg.DNS_Server_IP,GateWay,4);
+  }
+  
+   
+  /*将IP配置信息写入W5500相应寄存器*/	
+  setSUBR(Config_Msg.Sub);
+  setGAR(Config_Msg.Gw);
+  setSIPR(Config_Msg.Lip);
+  
+
+    getSHAR(tmp_array);
     printf("\r\nMAC : %.2X.%.2X.%.2X.%.2X.%.2X.%.2X", tmp_array[0],tmp_array[1],tmp_array[2],tmp_array[3],tmp_array[4],tmp_array[5]);
 
     getSIPR (tmp_array);
@@ -81,7 +122,6 @@ void Set_network(void)
     getGAR(tmp_array);
     printf("\r\nGW : %d.%d.%d.%d", tmp_array[0],tmp_array[1],tmp_array[2],tmp_array[3]);
 }
-
 
 void Reset_W5500(void)
 {
@@ -136,7 +176,6 @@ void USART3_Init(void)
     /* Enable the USARTx */
     USART_Cmd(USART3, ENABLE);
 }
-
 
 /*******************************************************************************
 * Function Name  : Delay_us
@@ -314,6 +353,98 @@ PUTCHAR_PROTOTYPE
   {}
   
   return ch;
+}
+
+/**
+*@brief	 	16位字符高8位低8位转换
+*@param		i:要转化的数据
+*@return	转换后的数据
+*/
+uint16 swaps(uint16 i)
+{
+  uint16 ret=0;
+  ret = (i & 0xFF) << 8;
+  ret |= ((i >> 8)& 0xFF);
+  return ret;	
+}
+/**
+*@brief	 	32位字符高低位变换
+*@param		i:要转化的数据
+*@return	转换后的数据
+*/
+uint32 swapl(uint32 l)
+{
+  uint32 ret=0;
+  ret = (l & 0xFF) << 24;
+  ret |= ((l >> 8) & 0xFF) << 16;
+  ret |= ((l >> 16) & 0xFF) << 8;
+  ret |= ((l >> 24) & 0xFF);
+  return ret;
+}
+
+/**
+*@brief		将一个 主机模式的unsigned short型数据转换到大端模式的TCP/IP 网络字节格式的数据.
+*@param		要转换的数据
+*@return 	大端模式的数据
+*/ 
+uint16 htons( 
+	uint16 hostshort	/**< A 16-bit number in host byte order.  */
+	)
+{
+#if ( SYSTEM_ENDIAN == _ENDIAN_LITTLE_ )
+	return swaps(hostshort);
+#else
+	return hostshort;
+#endif		
+}
+
+/**
+*@brief		将一个 主机模式的unsigned long型数据转换到大端模式的TCP/IP 网络字节格式的数据.
+*@param		要转换的数据
+*@return 	大端模式的数据
+*/ 
+unsigned long htonl(
+	unsigned long hostlong		/**< hostshort  - A 32-bit number in host byte order.  */
+	)
+{
+#if ( SYSTEM_ENDIAN == _ENDIAN_LITTLE_ )
+	return swapl(hostlong);
+#else
+	return hostlong;
+#endif	
+}
+
+
+
+/**
+*@brief		将一个大端模式的TCP/IP 网络字节格式的数据转换到主机模式的unsigned short型数据
+*@param		要转换的数据
+*@return 	unsigned short模式的数据
+*/ 
+unsigned long ntohs(
+	unsigned short netshort	/**< netshort - network odering 16bit value */
+	)
+{
+#if ( SYSTEM_ENDIAN == _ENDIAN_LITTLE_ )	
+	return htons(netshort);
+#else
+	return netshort;
+#endif		
+}
+
+
+/**
+*@brief		将一个大端模式的TCP/IP 网络字节格式的数据转换到主机模式的unsigned long型数据
+*@param		要转换的数据
+*@return 	unsigned long模式的数据
+*/ 
+unsigned long ntohl(unsigned long netlong)
+{
+#if ( SYSTEM_ENDIAN == _ENDIAN_LITTLE_ )
+	return htonl(netlong);
+#else
+	return netlong;
+#endif		
 }
 
 #ifdef USE_FULL_ASSERT

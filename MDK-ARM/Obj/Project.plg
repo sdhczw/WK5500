@@ -120,3 +120,1770 @@ Erase Done.
 Programming Done.
 Verify OK.
 Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\main.c(127): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(145): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling stm32f10x_it.c...
+compiling led.c...
+compiling stm32f10x_systick.c...
+compiling systick.c...
+compiling misc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling util.c...
+compiling md5.c...
+compiling socket.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling w5500.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling SPI2.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling zc_bc.c...
+compiling zc_client_manager.c...
+compiling zc_cloud_event.c...
+compiling zc_common.c...
+compiling zc_configuration.c...
+compiling zc_message_queue.c...
+compiling zc_moudle_manager.c...
+compiling zc_protocol_controller.c...
+compiling zc_sec_engine.c...
+compiling zc_timer.c...
+compiling bignum.c...
+compiling rsa.c...
+compiling crc.c...
+compiling aes_cbc.c...
+compiling aes_core.c...
+compiling zc_adapter.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling ac_api.c...
+compiling ac_hal.c...
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(18): error:  #5: cannot open source input file "utility.h": No such file or directory
+".\Obj\Project.axf" - 1 Errors, 16 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\main.c(127): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(145): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(19): error:  #5: cannot open source input file "w5500_conf.h": No such file or directory
+".\Obj\Project.axf" - 1 Errors, 4 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(91): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(92): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(176): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(177): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(274): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(275): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(367): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(449): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(781): error:  #20: identifier "ip_from" is undefined
+..\USER\APPs\Internet\dhcp.c(781): error:  #20: identifier "IP_FROM_DHCP" is undefined
+..\USER\APPs\Internet\dhcp.c(782): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(800): error:  #20: identifier "dhcp_ok" is undefined
+..\USER\APPs\Internet\dhcp.c(801): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 3 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(91): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(92): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(176): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(177): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(274): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(275): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(367): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(449): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(782): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(800): error:  #20: identifier "dhcp_ok" is undefined
+..\USER\APPs\Internet\dhcp.c(801): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 1 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(91): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(92): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(176): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(177): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(274): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(275): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(367): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(449): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(782): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(801): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_time (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_timer_init (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol set_w5500_ip (referred from dhcp.o).
+".\Obj\Project.axf" - 6 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(91): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(92): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(176): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(177): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(274): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(275): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(367): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(449): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(801): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_time (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol set_w5500_ip (referred from dhcp.o).
+".\Obj\Project.axf" - 5 Errors, 9 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(91): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(92): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(176): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(177): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(274): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(275): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(367): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(449): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(801): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_time (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol set_w5500_ip (referred from dhcp.o).
+".\Obj\Project.axf" - 5 Errors, 9 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(91): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(92): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(176): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(177): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(274): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(275): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(367): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(449): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(801): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_time (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol set_w5500_ip (referred from dhcp.o).
+".\Obj\Project.axf" - 5 Errors, 9 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(91): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(92): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(176): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(177): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(274): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(275): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(367): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(449): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(782): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(800): error:  #20: identifier "dhcp_ok" is undefined
+..\USER\APPs\Internet\dhcp.c(801): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 1 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(92): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(93): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(177): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(178): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(275): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(276): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(368): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(450): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(783): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(802): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_time (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_timer_init (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol set_w5500_ip (referred from dhcp.o).
+".\Obj\Project.axf" - 6 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(93): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(178): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(276): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(369): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(451): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(784): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_time (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_timer_init (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol set_w5500_ip (referred from dhcp.o).
+".\Obj\Project.axf" - 6 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(93): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(178): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(276): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(369): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(451): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(784): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_timer_init (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol set_w5500_ip (referred from dhcp.o).
+".\Obj\Project.axf" - 5 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\main.c(128): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(146): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling stm32f10x_it.c...
+compiling util.c...
+..\USER\util.c(149): warning:  #223-D: function "TIM2_Configuration" declared implicitly
+..\USER\util.c(150): warning:  #223-D: function "TIM2_NVIC_Configuration" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol TIM2_Configuration (referred from util.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol TIM2_NVIC_Configuration (referred from util.o).
+".\Obj\Project.axf" - 2 Errors, 6 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+linking...
+Program Size: Code=35772 RO-data=10700 RW-data=352 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 0 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.308V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\main.c(62): warning:  #223-D: function "Dhcp_Tick" declared implicitly
+..\USER\main.c(135): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(153): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.h(172): error:  #77-D: this declaration has no storage class or type specifier
+..\USER\APPs\Internet\dhcp.h(172): error:  #65: expected a ";"
+..\USER\APPs\Internet\dhcp.c(44): error:  #757: variable "EXTERN" is not a type name
+..\USER\APPs\Internet\dhcp.c(44): error:  #65: expected a ";"
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(784): error:  #20: identifier "ip_from" is undefined
+..\USER\APPs\Internet\dhcp.c(785): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(804): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 5 Errors, 15 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\APPs\Internet\dhcp.h(172): error:  #77-D: this declaration has no storage class or type specifier
+..\USER\APPs\Internet\dhcp.h(172): error:  #65: expected a ";"
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.h(172): error:  #77-D: this declaration has no storage class or type specifier
+..\USER\APPs\Internet\dhcp.h(172): error:  #65: expected a ";"
+..\USER\APPs\Internet\dhcp.c(44): error:  #757: variable "EXTERN" is not a type name
+..\USER\APPs\Internet\dhcp.c(44): error:  #65: expected a ";"
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(784): error:  #20: identifier "ip_from" is undefined
+..\USER\APPs\Internet\dhcp.c(785): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(804): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 7 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\APPs\Internet\dhcp.h(172): error:  #77-D: this declaration has no storage class or type specifier
+..\USER\APPs\Internet\dhcp.h(172): error:  #65: expected a ";"
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.h(172): error:  #77-D: this declaration has no storage class or type specifier
+..\USER\APPs\Internet\dhcp.h(172): error:  #65: expected a ";"
+..\USER\APPs\Internet\dhcp.c(44): error:  #757: variable "EXTERN" is not a type name
+..\USER\APPs\Internet\dhcp.c(44): error:  #65: expected a ";"
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(784): error:  #20: identifier "ip_from" is undefined
+..\USER\APPs\Internet\dhcp.c(785): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(804): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 7 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\APPs\Internet\dhcp.h(172): error:  #77-D: this declaration has no storage class or type specifier
+..\USER\APPs\Internet\dhcp.h(172): error:  #65: expected a ";"
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.h(172): error:  #77-D: this declaration has no storage class or type specifier
+..\USER\APPs\Internet\dhcp.h(172): error:  #65: expected a ";"
+..\USER\APPs\Internet\dhcp.c(44): error:  #20: identifier "u8" is undefined
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(785): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(804): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 5 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(44): error:  #20: identifier "u8" is undefined
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(785): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(804): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 1 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(785): warning:  #223-D: function "dhcp_timer_init" declared implicitly
+..\USER\APPs\Internet\dhcp.c(804): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol dhcp_timer_init (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol set_w5500_ip (referred from dhcp.o).
+".\Obj\Project.axf" - 5 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol set_w5500_ip (referred from dhcp.o).
+".\Obj\Project.axf" - 4 Errors, 9 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(97): error:  #20: identifier "ConfigMsg" is undefined
+..\USER\util.c(97): error:  #20: identifier "mymac" is undefined
+..\USER\util.c(107): error:  #20: identifier "dhcp_gdata" is undefined
+..\USER\util.c(116): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(117): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(118): error:  #20: identifier "gateway" is undefined
+..\USER\util.c(119): error:  #20: identifier "dns_server" is undefined
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 12 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(97): error:  #136: struct "_CONFIG_MSG" has no field "mac"
+..\USER\util.c(97): error:  #20: identifier "mymac" is undefined
+..\USER\util.c(107): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(107): error:  #20: identifier "dhcp_gdata" is undefined
+..\USER\util.c(108): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(109): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(110): error:  #136: struct "_CONFIG_MSG" has no field "dns"
+..\USER\util.c(116): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(116): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(117): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(117): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(118): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(118): error:  #20: identifier "gateway" is undefined
+..\USER\util.c(119): error:  #136: struct "_CONFIG_MSG" has no field "dns"
+..\USER\util.c(119): error:  #20: identifier "dns_server" is undefined
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 25 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(97): error:  #20: identifier "mymac" is undefined
+..\USER\util.c(107): error:  #20: identifier "dhcp_gdata" is undefined
+..\USER\util.c(110): error:  #136: struct "_CONFIG_MSG" has no field "Dns"
+..\USER\util.c(116): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(117): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(118): error:  #20: identifier "gateway" is undefined
+..\USER\util.c(119): error:  #136: struct "_CONFIG_MSG" has no field "Dns"
+..\USER\util.c(119): error:  #20: identifier "dns_server" is undefined
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 18 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(107): error:  #20: identifier "dhcp_gdata" is undefined
+..\USER\util.c(110): error:  #136: struct "_CONFIG_MSG" has no field "Dns"
+..\USER\util.c(116): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(117): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(118): error:  #20: identifier "gateway" is undefined
+..\USER\util.c(119): error:  #136: struct "_CONFIG_MSG" has no field "Dns"
+..\USER\util.c(119): error:  #20: identifier "dns_server" is undefined
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 17 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(110): error:  #136: struct "_CONFIG_MSG" has no field "Dns"
+..\USER\util.c(116): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(117): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(118): error:  #20: identifier "gateway" is undefined
+..\USER\util.c(119): error:  #136: struct "_CONFIG_MSG" has no field "Dns"
+..\USER\util.c(119): error:  #20: identifier "dns_server" is undefined
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 16 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(116): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(117): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(118): error:  #20: identifier "gateway" is undefined
+..\USER\util.c(119): error:  #136: struct "_CONFIG_MSG" has no field "Dns"
+..\USER\util.c(119): error:  #20: identifier "dns_server" is undefined
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 15 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(117): error:  #20: identifier "Sub" is undefined
+..\USER\util.c(119): error:  #136: struct "_CONFIG_MSG" has no field "Dns"
+..\USER\util.c(119): error:  #20: identifier "dns_server" is undefined
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 13 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(119): error:  #136: struct "_CONFIG_MSG" has no field "Dns"
+..\USER\util.c(119): error:  #20: identifier "dns_server" is undefined
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 12 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(119): error:  #20: identifier "dns_server" is undefined
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 11 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(124): error:  #20: identifier "FW_VER_HIGH" is undefined
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #20: identifier "FW_VER_LOW" is undefined
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 10 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(128): error:  #136: struct "_CONFIG_MSG" has no field "sub"
+..\USER\util.c(129): error:  #136: struct "_CONFIG_MSG" has no field "gw"
+..\USER\util.c(130): error:  #136: struct "_CONFIG_MSG" has no field "lip"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 8 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(124): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(125): error:  #136: struct "_CONFIG_MSG" has no field "sw_ver"
+..\USER\util.c(132): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(134): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(136): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 5 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(128): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(130): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(132): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 3 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(128): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(131): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(133): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 3 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(97): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(129): error:  #20: identifier "local_ip" is undefined
+..\USER\util.c(131): error:  #20: identifier "subnet" is undefined
+..\USER\util.c(133): error:  #20: identifier "gateway" is undefined
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 3 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(98): warning:  #223-D: function "memcpy" declared implicitly
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htonl (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol htons (referred from dhcp.o).
+.\Obj\Project.axf: Error: L6218E: Undefined symbol ntohl (referred from dhcp.o).
+".\Obj\Project.axf" - 3 Errors, 10 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(98): warning:  #223-D: function "memcpy" declared implicitly
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+Program Size: Code=37020 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 10 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\main.c(62): warning:  #223-D: function "Dhcp_Tick" declared implicitly
+..\USER\main.c(135): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(153): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling stm32f10x_it.c...
+compiling util.c...
+..\USER\util.c(98): warning:  #223-D: function "memcpy" declared implicitly
+..\USER\util.c(423): error:  #147-D: declaration is incompatible with "unsigned int htonl(unsigned long)" (declared at line 39 of "..\include\util.h")
+..\USER\util.c(441): error:  #147-D: declaration is incompatible with "unsigned int ntohs(unsigned short)" (declared at line 41 of "..\include\util.h")
+..\USER\util.c(458): error:  #147-D: declaration is incompatible with "unsigned int ntohl(unsigned long)" (declared at line 43 of "..\include\util.h")
+compiling socket.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling SPI2.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling zc_adapter.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+".\Obj\Project.axf" - 3 Errors, 25 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\main.c(62): warning:  #223-D: function "Dhcp_Tick" declared implicitly
+..\USER\main.c(135): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(153): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling stm32f10x_it.c...
+compiling util.c...
+..\USER\util.c(98): warning:  #223-D: function "memcpy" declared implicitly
+compiling socket.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling SPI2.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling zc_adapter.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(94): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(95): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(179): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(180): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(277): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(278): warning:  #223-D: function "htons" declared implicitly
+..\USER\APPs\Internet\dhcp.c(370): warning:  #223-D: function "htonl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(452): warning:  #223-D: function "ntohl" declared implicitly
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+Program Size: Code=37020 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 25 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(803): warning:  #223-D: function "set_w5500_ip" declared implicitly
+linking...
+Program Size: Code=37020 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 1 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\main.c(62): warning:  #223-D: function "Dhcp_Tick" declared implicitly
+..\USER\main.c(135): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(153): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling stm32f10x_it.c...
+compiling util.c...
+..\USER\util.c(98): warning:  #223-D: function "memcpy" declared implicitly
+compiling socket.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling SPI2.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling zc_adapter.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling dhcp.c...
+linking...
+Program Size: Code=37020 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 16 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\main.c(62): warning:  #223-D: function "Dhcp_Tick" declared implicitly
+..\USER\main.c(135): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(153): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling socket.c...
+compiling w5500.c...
+compiling SPI2.c...
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(460): error:  #20: identifier "SOCK_TCPC" is undefined
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(596): error:  #20: identifier "SOCK_UDPC" is undefined
+..\USER\APPs\ADAPTOR\zc_adapter.c(618): error:  #20: identifier "SOCK_TCPC" is undefined
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(154): error:  #20: identifier "SOCK_DHCP" is undefined
+..\USER\APPs\Internet\dhcp.c(255): error:  #20: identifier "SOCK_DHCP" is undefined
+..\USER\APPs\Internet\dhcp.c(337): error:  #20: identifier "SOCK_DHCP" is undefined
+..\USER\APPs\Internet\dhcp.c(355): error:  #20: identifier "SOCK_DHCP" is undefined
+..\USER\APPs\Internet\dhcp.c(529): error:  #20: identifier "SOCK_DHCP" is undefined
+..\USER\APPs\Internet\dhcp.c(722): error:  #20: identifier "SOCK_DHCP" is undefined
+..\USER\APPs\Internet\dhcp.c(791): error:  #20: identifier "SOCK_DHCP" is undefined
+".\Obj\Project.axf" - 10 Errors, 7 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(460): error:  #20: identifier "SOCK_TCPC" is undefined
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(596): error:  #20: identifier "SOCK_UDPC" is undefined
+..\USER\APPs\ADAPTOR\zc_adapter.c(618): error:  #20: identifier "SOCK_TCPC" is undefined
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling dhcp.c...
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(44): error:  #240: duplicate specifier in declaration
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(44): error:  #84: invalid combination of type specifiers
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(46): error:  #240: duplicate specifier in declaration
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(46): error:  #84: invalid combination of type specifiers
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h(872): error:  #40: expected an identifier
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h(1195): error:  #40: expected an identifier
+".\Obj\Project.axf" - 9 Errors, 4 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\main.c(62): warning:  #223-D: function "Dhcp_Tick" declared implicitly
+..\USER\main.c(135): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(153): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling socket.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling w5500.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling SPI2.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+compiling zc_adapter.c...
+..\include\W5500\socket.h(16): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 91 of "..\include\config.h")
+..\include\W5500\socket.h(17): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 90 of "..\include\config.h")
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling dhcp.c...
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(44): error:  #240: duplicate specifier in declaration
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(44): error:  #84: invalid combination of type specifiers
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(46): error:  #240: duplicate specifier in declaration
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(46): error:  #84: invalid combination of type specifiers
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h(872): error:  #40: expected an identifier
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h(1195): error:  #40: expected an identifier
+..\include\config.h(90): warning:  #47-D: incompatible redefinition of macro "SOCK_DNS" (declared at line 17 of "..\include\W5500\socket.h")
+..\include\config.h(91): warning:  #47-D: incompatible redefinition of macro "SOCK_DHCP" (declared at line 16 of "..\include\W5500\socket.h")
+".\Obj\Project.axf" - 6 Errors, 19 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\main.c(62): warning:  #223-D: function "Dhcp_Tick" declared implicitly
+..\USER\main.c(135): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(153): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling stm32f10x_it.c...
+compiling util.c...
+..\USER\util.c(98): warning:  #223-D: function "memcpy" declared implicitly
+compiling socket.c...
+compiling w5500.c...
+compiling SPI2.c...
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling dhcp.c...
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(44): error:  #240: duplicate specifier in declaration
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(44): error:  #84: invalid combination of type specifiers
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(46): error:  #240: duplicate specifier in declaration
+d:\Keil_v4\ARM\ARMCC\bin\..\include\stdint.h(46): error:  #84: invalid combination of type specifiers
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h(872): error:  #40: expected an identifier
+..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h(1195): error:  #40: expected an identifier
+".\Obj\Project.axf" - 6 Errors, 8 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+linking...
+Program Size: Code=37020 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 0 Warning(s).
+Rebuild target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\main.c(62): warning:  #223-D: function "Dhcp_Tick" declared implicitly
+..\USER\main.c(135): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(153): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling stm32f10x_it.c...
+compiling led.c...
+compiling stm32f10x_systick.c...
+compiling systick.c...
+compiling misc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling util.c...
+..\USER\util.c(98): warning:  #223-D: function "memcpy" declared implicitly
+compiling md5.c...
+compiling socket.c...
+compiling w5500.c...
+compiling SPI2.c...
+compiling zc_bc.c...
+compiling zc_client_manager.c...
+compiling zc_cloud_event.c...
+compiling zc_common.c...
+compiling zc_configuration.c...
+compiling zc_message_queue.c...
+compiling zc_moudle_manager.c...
+compiling zc_protocol_controller.c...
+compiling zc_sec_engine.c...
+compiling zc_timer.c...
+compiling bignum.c...
+compiling rsa.c...
+compiling crc.c...
+compiling aes_cbc.c...
+compiling aes_core.c...
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling ac_api.c...
+compiling ac_hal.c...
+compiling dhcp.c...
+linking...
+Program Size: Code=37020 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 8 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\main.c(136): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(154): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling dhcp.c...
+linking...
+Program Size: Code=37020 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 2 Warning(s).
+Rebuild target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\main.c(136): warning:  #223-D: function "ZC_Init" declared implicitly
+..\USER\main.c(154): warning:  #223-D: function "HF_Cloudfunc" declared implicitly
+compiling stm32f10x_it.c...
+compiling led.c...
+compiling stm32f10x_systick.c...
+compiling systick.c...
+compiling misc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling util.c...
+..\USER\util.c(98): warning:  #223-D: function "memcpy" declared implicitly
+compiling md5.c...
+compiling socket.c...
+compiling w5500.c...
+compiling SPI2.c...
+compiling zc_bc.c...
+compiling zc_client_manager.c...
+compiling zc_cloud_event.c...
+compiling zc_common.c...
+compiling zc_configuration.c...
+compiling zc_message_queue.c...
+compiling zc_moudle_manager.c...
+compiling zc_protocol_controller.c...
+compiling zc_sec_engine.c...
+compiling zc_timer.c...
+compiling bignum.c...
+compiling rsa.c...
+compiling crc.c...
+compiling aes_cbc.c...
+compiling aes_core.c...
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adapter.c(67): warning:  #177-D: variable "port" was declared but never referenced
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): warning:  #940-D: missing return statement at end of non-void function "HF_FirmwareUpdateFinish"
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+..\USER\APPs\ADAPTOR\zc_adapter.c(617): warning:  #177-D: variable "u32Timer" was declared but never referenced
+compiling ac_api.c...
+compiling ac_hal.c...
+compiling dhcp.c...
+linking...
+Program Size: Code=37020 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 7 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\APPs\ADAPTOR\zc_adpter.h(34): warning:  #1295-D: Deprecated declaration HF_Cloudfunc - give arg types
+..\USER\main.c(136): warning:  #223-D: function "ZC_Init" declared implicitly
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adpter.h(34): warning:  #1295-D: Deprecated declaration HF_Cloudfunc - give arg types
+..\USER\APPs\ADAPTOR\zc_adapter.c(333): error:  #65: expected a ";"
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+compiling dhcp.c...
+".\Obj\Project.axf" - 1 Errors, 4 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adpter.h(34): warning:  #1295-D: Deprecated declaration HF_Cloudfunc - give arg types
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+compiling dhcp.c...
+linking...
+Program Size: Code=37012 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 2 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\main.c(136): warning:  #223-D: function "ZC_Init" declared implicitly
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+compiling dhcp.c...
+linking...
+Program Size: Code=37012 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 2 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+compiling dhcp.c...
+linking...
+Program Size: Code=37012 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 1 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+linking...
+Program Size: Code=37012 RO-data=10700 RW-data=368 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 0 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+compiling dhcp.c...
+linking...
+Program Size: Code=40776 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 0 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.304V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+compiling util.c...
+..\USER\util.c(38): warning:  #177-D: variable "tmp_array" was declared but never referenced
+..\USER\util.c(39): warning:  #177-D: variable "i" was declared but never referenced
+..\USER\util.c(69): warning:  #223-D: function "memcpy" declared implicitly
+compiling dhcp.c...
+linking...
+Program Size: Code=41252 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 3 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(81): warning:  #223-D: function "memcpy" declared implicitly
+compiling dhcp.c...
+linking...
+Program Size: Code=41584 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 1 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+linking...
+Program Size: Code=41576 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 0 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.304V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling led.c...
+compiling stm32f10x_systick.c...
+compiling systick.c...
+compiling misc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling util.c...
+..\USER\util.c(81): warning:  #223-D: function "memcpy" declared implicitly
+compiling md5.c...
+compiling socket.c...
+compiling w5500.c...
+compiling SPI2.c...
+compiling zc_bc.c...
+compiling zc_client_manager.c...
+compiling zc_cloud_event.c...
+compiling zc_common.c...
+compiling zc_configuration.c...
+compiling zc_message_queue.c...
+compiling zc_moudle_manager.c...
+compiling zc_protocol_controller.c...
+compiling zc_sec_engine.c...
+compiling zc_timer.c...
+compiling bignum.c...
+compiling rsa.c...
+compiling crc.c...
+compiling aes_cbc.c...
+compiling aes_core.c...
+compiling zc_adapter.c...
+..\USER\APPs\ADAPTOR\zc_adapter.c(477): warning:  #223-D: function "Dns_Task" declared implicitly
+compiling ac_api.c...
+compiling ac_hal.c...
+compiling dhcp.c...
+linking...
+Program Size: Code=43756 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 2 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+linking...
+Program Size: Code=43756 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 0 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling dhcp.c...
+linking...
+Program Size: Code=43756 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 0 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\main.c(77): error:  #120: return value type does not match the function type
+compiling dhcp.c...
+".\Obj\Project.axf" - 1 Errors, 0 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\main.c(77): error:  #120: return value type does not match the function type
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(779): error:  #20: identifier "u8" is undefined
+".\Obj\Project.axf" - 2 Errors, 0 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+..\USER\main.c(77): error:  #120: return value type does not match the function type
+compiling dhcp.c...
+..\USER\APPs\Internet\dhcp.c(779): error:  #147: declaration is incompatible with "void do_dhcp(void)" (declared at line 171 of "..\USER\APPs\Internet\dhcp.h")
+".\Obj\Project.axf" - 2 Errors, 0 Warning(s).
+Target not created
+Build target 'Multi Media Development Board V1.0'
+compiling main.c...
+compiling util.c...
+..\USER\util.c(81): warning:  #223-D: function "memcpy" declared implicitly
+compiling dhcp.c...
+linking...
+Program Size: Code=43788 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 1 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(81): warning:  #223-D: function "memcpy" declared implicitly
+compiling dhcp.c...
+linking...
+Program Size: Code=43788 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 1 Warning(s).
+Build target 'Multi Media Development Board V1.0'
+compiling util.c...
+..\USER\util.c(81): warning:  #223-D: function "memcpy" declared implicitly
+compiling dhcp.c...
+linking...
+Program Size: Code=43788 RO-data=10708 RW-data=436 ZI-data=20804  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 1 Warning(s).
+Load "D:\\IOT\\W5500\\AbleCloud_W5500\\MDK-ARM\\Obj\\Project.axf" 
+Set JLink Project File to "D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jul 28 2014 08:23:29
+Hardware: V9.00
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RE
+VTarget = 3.303V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...

@@ -17,6 +17,7 @@
 .\obj\main.o: ..\include\config.h
 .\obj\main.o: ..\include\Types.h
 .\obj\main.o: ..\include\util.h
+.\obj\main.o: ..\USER\APPs\Internet\dhcp.h
 .\obj\main.o: ..\include\W5500\w5500.h
 .\obj\main.o: ..\include\W5500\socket.h
 .\obj\main.o: ..\include\W5500\SPI2.h

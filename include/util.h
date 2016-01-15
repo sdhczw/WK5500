@@ -34,4 +34,12 @@ uint8_t USART3_Getc(uint8_t c);
 
 uint32_t time_return(void);
 
+uint16 htons( unsigned short hostshort);	/* htons function converts a unsigned short from host to TCP/IP network byte order (which is big-endian).*/
+
+unsigned long  htonl(unsigned long hostlong);		/* htonl function converts a unsigned long from host to TCP/IP network byte order (which is big-endian). */
+
+unsigned long  ntohs(unsigned short netshort);		/* ntohs function converts a unsigned short from TCP/IP network byte order to host byte order (which is little-endian on Intel processors). */
+
+unsigned long  ntohl(unsigned long netlong);		/* ntohl function converts a u_long from TCP/IP network order to host byte order (which is little-endian on Intel processors). */
+void set_w5500_ip(uint8_t ip_from);
 #endif

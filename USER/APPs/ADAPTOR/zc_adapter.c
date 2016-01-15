@@ -64,7 +64,6 @@ void loopback_tcpc(SOCKET s)
         uint16 RSR_len;
         uint16 received_len;
 	uint8 * data_buf = TX_BUF;
-   uint16 port = 9100;
         u32 u32Timer = 0;
    switch (getSn_SR(s))
    {
@@ -330,6 +329,7 @@ u32 HF_FirmwareUpdateFinish(u32 u32TotalLen)
         return ZC_RET_ERROR;    
     }
     #endif
+    return ZC_RET_OK;
 }
 
 
@@ -614,7 +614,6 @@ void HF_BcInit()
 *************************************************/
 void HF_Cloudfunc() 
 {
-    u32 u32Timer = 0;
     g_struProtocolController.struCloudConnection.u32Socket = SOCK_TCPC;
     HF_BcInit();
     ZC_TimerExpired();

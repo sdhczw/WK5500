@@ -21,3 +21,4 @@
 .\obj\util.o: d:\Keil_v4\ARM\ARMCC\bin\..\include\stdarg.h
 .\obj\util.o: ..\USER\SysTick\systick.h
 .\obj\util.o: ..\USER\led.h
+.\obj\util.o: ..\USER\APPs\Internet\dhcp.h

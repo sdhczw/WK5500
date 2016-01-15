@@ -86,9 +86,9 @@ typedef struct _CONFIG_TYPE_DEF
 }CHCONFIG_TYPE_DEF;
 
 	
-#define SOCK_CONFIG		2	// UDP
-#define SOCK_DNS		2	// UDP
-#define SOCK_DHCP		3	// UDP
+//#define SOCK_CONFIG		2	// UDP
+//#define SOCK_DNS		2	// UDP
+//#define SOCK_DHCP		3	// UDP
 
 #define MAX_BUF_SIZE		1460
 #define KEEP_ALIVE_TIME	30	// 30sec
