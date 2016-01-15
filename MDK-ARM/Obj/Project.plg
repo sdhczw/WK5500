@@ -1,0 +1,14 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\IOT\W5500\AbleCloud_W5500\MDK-ARM\Project.uvproj
+Project File Date:  09/12/2015
+
+<h2>Output:</h2>
+Build target 'Multi Media Development Board V1.0'
+linking...
+Program Size: Code=36708 RO-data=10700 RW-data=352 ZI-data=19736  
+FromELF: creating hex file...
+".\Obj\Project.axf" - 0 Errors, 0 Warning(s).
