@@ -78,6 +78,28 @@ u8 Dns_Task(u8* name,u8 *ip)
   return RET_SUCCESS;
 }
 /*******************************************************************************
+ * 函数名：Get_ChipInfo(void)
+ * 描述  ：获取芯片Flash 大小
+ * 输入  ：无
+ * 输出  ：无
+ * 说明  ：
+*******************************************************************************/
+void Get_ChipInfo(void)
+{
+   uint32_t ChipUniqueID[3];
+  u16 STM32_FLASH_SIZE;
+   ChipUniqueID[0] = *(__IO u32 *)(0X1FFFF7F0); // 高字节
+   ChipUniqueID[1] = *(__IO u32 *)(0X1FFFF7EC); //
+   ChipUniqueID[2] = *(__IO u32 *)(0X1FFFF7E8); // 低字节
+   STM32_FLASH_SIZE= *(u16*)(0x1FFFF7E0);    //闪存容量寄存器  
+   printf("\r\n########### 芯片的唯一ID为: %X-%X-%X \n",
+           ChipUniqueID[0],ChipUniqueID[1],ChipUniqueID[2]);  
+   printf("\r\n########### 芯片flash的容量为: %dK \n", STM32_FLASH_SIZE);
+   printf("\r\n########### 烧录日期: "__DATE__" - "__TIME__"\n");
+      //输出使用固件库版本号
+    printf("\r\n########### 代码固件库版本: V %d.%d.%d \n",__STM32F10X_STDPERIPH_VERSION_MAIN,__STM32F10X_STDPERIPH_VERSION_SUB1,__STM32F10X_STDPERIPH_VERSION_SUB2);  
+}
+/*******************************************************************************
 * Function Name  : main
 * Description    : Main program.
 * Input          : None
@@ -105,7 +127,7 @@ int main(void)
     ZC_Init();
     HF_ReadDataFormFlash();
     WIZ_Config(); // network config & Call Set_network ();
-
+    Get_ChipInfo();
     presentTime = my_time; // For TCP client's connection request delay
     // Start Application
     printf("\r\n\r\n------------------------------------------- \r\n");
