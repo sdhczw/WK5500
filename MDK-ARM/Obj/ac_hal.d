@@ -1,9 +1,0 @@
-.\obj\ac_hal.o: ..\USER\APPs\AC\src\ac_hal.c
-.\obj\ac_hal.o: ..\USER\APPs\ZC\inc\zc\zc_common.h
-.\obj\ac_hal.o: ..\USER\APPs\ZC\inc\zc\zc_module_config.h
-.\obj\ac_hal.o: d:\Keil_v4\ARM\ARMCC\bin\..\include\string.h
-.\obj\ac_hal.o: d:\Keil_v4\ARM\ARMCC\bin\..\include\stdlib.h
-.\obj\ac_hal.o: ..\USER\APPs\ZC\inc\zc\zc_protocol_interface.h
-.\obj\ac_hal.o: ..\USER\APPs\AC\inc\ac_api.h
-.\obj\ac_hal.o: ..\USER\APPs\AC\inc\ac_hal.h
-.\obj\ac_hal.o: ..\USER\APPs\AC\inc\ac_cfg.h

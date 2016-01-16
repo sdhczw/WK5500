@@ -377,7 +377,7 @@ void getGAR(uint8 * addr);
 void getSUBR(uint8 * addr);
 void getSHAR(uint8 * addr);
 void getSIPR(uint8 * addr);
-
+void getPHYCFGR(uint8 * addr);
 /**
  @brief WIZCHIP_OFFSET_INC on IINCHIP_READ/WRITE
  * case1.

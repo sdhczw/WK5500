@@ -12,6 +12,20 @@
 #define uint8   unsigned char
 #define uint32_t unsigned int
 
+//=================================================
+typedef struct _CONFIG_MSG
+{
+	uint8 Mac[6];
+	uint8 Lip[4];
+	uint8 Sub[4];
+	uint8 Gw[4];
+	uint8 DNS_Server_IP[4];	
+	uint8  DHCP;
+}
+CONFIG_MSG;
+
+extern CONFIG_MSG Config_Msg;
+
 void Set_network(void);
 
 void Reset_W5500(void);

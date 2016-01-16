@@ -3,6 +3,7 @@
 #include "W5500\w5500.h"
 #include "W5500\socket.h"
 #include "util.h"
+#include "dns.h"
 #include "APPs\loopback.h"
 #include <stdio.h>
 #include <string.h>
@@ -17,7 +18,8 @@
 #include <ac_api.h>
 
 #define tick_second 1
-
+#define LINK_ON  1
+#define LINK_OFF 0
 extern uint8 ch_status[MAX_SOCK_NUM];
 extern CHCONFIG_TYPE_DEF Chconfig_Type_Def;
 extern CONFIG_MSG Config_Msg;
@@ -102,13 +104,40 @@ void loopback_tcpc(SOCKET s)
       disconnect(s);
       u32Timer = rand();
       u32Timer = (PCT_TIMER_INTERVAL_RECONNECT) * (u32Timer % 10 + 1);
-      ZC_Printf("disconnect, timer = %d\n", g_struProtocolController.u8MainState, u32Timer);
+      ZC_Printf("CLOSE_WAIT:disconnect, timer = %d\r\n", u32Timer);
       PCT_ReconnectCloud(&g_struProtocolController, u32Timer);
       ch_status[s] = 0;
       break;
    case SOCK_CLOSED:                                               /* if a socket is closed */
+   {
+      // static
+        //printf("\r\n%d : Closed",s);
+       uint8 Linkstatus;
+       static uint32 i = 0;
+       getPHYCFGR(&Linkstatus);
+       if(i++>10000)
+       {
+          printf("\r\nPHYCFGR = %x",Linkstatus);
+           i = 0;
+       }
+       if(Linkstatus&LINK_ON)
+       {               
+           if(ch_status[s] == 2)//主动断链，重连
+           {
+               u32Timer = rand();
+               u32Timer = (PCT_TIMER_INTERVAL_RECONNECT) * (u32Timer % 10 + 1);
+               ZC_Printf("CLOSED:disconnect, timer = %d\r\n", u32Timer);
+               PCT_ReconnectCloud(&g_struProtocolController, u32Timer);
+               ch_status[s] = 0;
+           } 
+       }
+       else
+       {
+          HF_Sleep(); 
+       }
 
       break;
+   }
         case SOCK_INIT:     /* if a socket is initiated */
 
                 break;
@@ -459,7 +488,7 @@ u32 HF_ConnectToCloud(PTC_Connection *pstruConnection)
 {
     int fd = SOCK_TCPC; 
     //u8 ip[4] = {120, 132, 77, 0}; for test
-    u8 ip[4] = {123, 57, 206, 235};
+    u8 ip[4] = {0};
     u32 temp;
     int retval;
     u16 port;
@@ -474,7 +503,7 @@ u32 HF_ConnectToCloud(PTC_Connection *pstruConnection)
     else
     {
         port = ZC_CLOUD_PORT;
-        retval = Dns_Task((const char *)g_struZcConfigDb.struCloudInfo.u8CloudAddr,ip);
+        retval = Dns_Task(g_struZcConfigDb.struCloudInfo.u8CloudAddr,ip);
         //struIp = ZC_HTONL(0x78844D00);
     }
 

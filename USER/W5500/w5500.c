@@ -293,6 +293,12 @@ void getSIPR(uint8 * addr)
     wiz_read_buf(SIPR0, addr, 4);
 }
 
+
+void getPHYCFGR(uint8 * addr)
+{
+    wiz_read_buf(PHYCFGR, addr, 1);
+}
+
 void setMR(uint8 val)
 {
   IINCHIP_WRITE(MR,val);

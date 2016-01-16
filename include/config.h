@@ -66,17 +66,6 @@
 
 
 
-//=================================================
-typedef struct _CONFIG_MSG
-{
-	uint8 Mac[6];
-	uint8 Lip[4];
-	uint8 Sub[4];
-	uint8 Gw[4];
-	uint8 DNS_Server_IP[4];	
-	uint8  DHCP;
-}
-CONFIG_MSG;
 
 
 typedef struct _CONFIG_TYPE_DEF
