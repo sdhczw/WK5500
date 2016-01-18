@@ -29,8 +29,6 @@ extern uint8 IP[4];
 extern uint8 GateWay[4];
 extern uint8 SubNet[4];
 extern uint8 Enable_DHCP;
-extern uint8 Dest_IP[4] ;
-extern uint16 Dest_PORT ;
 uint8 dhcp_ok=0;
 uint32	dhcp_time= 0;																		/*DHCP运行计数*/
 uint8  ip_from;	        //DHCP
@@ -48,9 +46,6 @@ void Set_network(void)
     // Set DHCP
     Config_Msg.DHCP = Enable_DHCP;
     //Destination IP address for TCP Client
-    Chconfig_Type_Def.destip[0] = Dest_IP[0]; Chconfig_Type_Def.destip[1] = Dest_IP[1];
-    Chconfig_Type_Def.destip[2] = Dest_IP[2]; Chconfig_Type_Def.destip[3] = Dest_IP[3];
-    Chconfig_Type_Def.port = Dest_PORT;
 
     //Set PTR and RCR register
     setRTR(2000);

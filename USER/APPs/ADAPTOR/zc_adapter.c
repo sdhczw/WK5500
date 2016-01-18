@@ -334,19 +334,14 @@ void ZC_TimerExpired()
 * Parameter: 
 * History:
 *************************************************/
-void HF_ReadDataFormFlash(void) 
+void HF_ReadDataFromFlash(u8 *pu8Data, u16 u16Len) 
 {
     FLASH_Unlock(); 
     FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_OPTERR | FLASH_FLAG_WRPRTERR | FLASH_FLAG_PGERR);
-    if (ZC_MAGIC_FLAG == *((__IO u32 *)(0x08000000+0x40000-sizeof(ZC_ConfigDB))))
-    {   
-         memcpy((char *)(&g_struZcConfigDb),(u8 *)(0x08000000+0x40000-sizeof(ZC_ConfigDB)),sizeof(ZC_ConfigDB));
-    }
-    else
-    {
-        ZC_Printf("no para, use default\n");
-    }
-     FLASH_Lock();
+ 
+    memcpy((char *)(&g_struZcConfigDb),(void *)(0x08000000+0x40000-sizeof(ZC_ConfigDB)),sizeof(ZC_ConfigDB));
+
+    FLASH_Lock();
 }
 
 /*************************************************
@@ -486,9 +481,6 @@ u32 HF_SendDataToMoudle(u8 *pu8Data, u16 u16DataLen)
 *************************************************/
 void HF_Rest(void)
 {
-    
-    g_struZcConfigDb.struSwitchInfo.u32ServerAddrConfig = 0;            
-    HF_WriteDataToFlash((u8 *)&g_struZcConfigDb, sizeof(ZC_ConfigDB));
 
 }
 /*************************************************
@@ -743,6 +735,7 @@ void ZC_Init()
     //存储类接口
     g_struHfAdapter.pfunUpdateFinish = HF_FirmwareUpdateFinish;
     g_struHfAdapter.pfunWriteFlash = HF_WriteDataToFlash;
+    g_struHfAdapter.pfunReadFlash = HF_ReadDataFromFlash;
     //系统类接口    
     g_struHfAdapter.pfunRest = HF_Rest;    
     g_struHfAdapter.pfunGetMac = HF_GetMac;
