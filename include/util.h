@@ -33,9 +33,9 @@ void Reset_W5500(void);
 // void LED1_onoff(uint8_t on_off);
 // void LED2_onoff(uint8_t on_off);
 
-void USART3_Init(void);
+void USART3_Configuration(void);
 void USART3_Puts(char * str);
-
+void USART1_Configuration(void);
 void Delay_us(uint8 time_us);
 void Delay_ms(uint16 time_ms);
 

@@ -150,7 +150,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name></Name>
+          <Name>/</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -167,7 +167,7 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>174</LineNumber>
+          <LineNumber>139</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -176,14 +176,14 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>D:\IOT\W5500\AbleCloud_W5500\USER\stm32f10x_it.c</Filename>
+          <Filename>D:\IOT\W5500\AbleCloud_W5500\USER\main.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>197</LineNumber>
+          <LineNumber>154</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -192,7 +192,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>D:\IOT\W5500\AbleCloud_W5500\USER\util.c</Filename>
+          <Filename>D:\IOT\W5500\AbleCloud_W5500\USER\main.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -213,14 +213,26 @@
           <WinNumber>1</WinNumber>
           <ItemText>g_struZcConfigDb</ItemText>
         </Ww>
+        <Ww>
+          <count>3</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>g_struZcConfigDb</ItemText>
+        </Ww>
       </WatchWindow1>
+      <MemoryWindow1>
+        <Mm>
+          <WinNumber>1</WinNumber>
+          <SubType>0</SubType>
+          <ItemText>0x8003FED0</ItemText>
+        </Mm>
+      </MemoryWindow1>
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
       <DebugFlag>
         <trace>0</trace>
         <periodic>0</periodic>
-        <aLwin>0</aLwin>
+        <aLwin>1</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
@@ -262,8 +274,8 @@
       <Focus>0</Focus>
       <ColumnNumber>19</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>14</CurrentLine>
+      <TopLine>127</TopLine>
+      <CurrentLine>147</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -276,9 +288,9 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>18</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>150</TopLine>
+      <TopLine>159</TopLine>
       <CurrentLine>174</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\stm32f10x_it.c</PathWithFileName>
@@ -292,10 +304,10 @@
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>32</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>8</TopLine>
+      <CurrentLine>34</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\stm32f10x_conf.h</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_conf.h</FilenameWithoutPath>
@@ -310,7 +322,7 @@
       <Focus>0</Focus>
       <ColumnNumber>27</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
+      <TopLine>8</TopLine>
       <CurrentLine>19</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\led.c</PathWithFileName>
@@ -326,7 +338,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>101</TopLine>
+      <TopLine>29</TopLine>
       <CurrentLine>30</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\SysTick\stm32f10x_systick.c</PathWithFileName>
@@ -342,7 +354,7 @@
       <Focus>0</Focus>
       <ColumnNumber>39</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>6</TopLine>
+      <TopLine>41</TopLine>
       <CurrentLine>49</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\SysTick\systick.c</PathWithFileName>
@@ -380,10 +392,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>25</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>22</CurrentLine>
+      <TopLine>839</TopLine>
+      <CurrentLine>847</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_flash.c</FilenameWithoutPath>
@@ -398,7 +410,7 @@
       <Focus>0</Focus>
       <ColumnNumber>28</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>366</TopLine>
+      <TopLine>369</TopLine>
       <CurrentLine>375</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c</PathWithFileName>
@@ -558,7 +570,7 @@
       <Focus>0</Focus>
       <ColumnNumber>6</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>70</TopLine>
+      <TopLine>78</TopLine>
       <CurrentLine>86</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c</PathWithFileName>
@@ -670,8 +682,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>156</TopLine>
-      <CurrentLine>157</CurrentLine>
+      <TopLine>764</TopLine>
+      <CurrentLine>772</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_spi.c</FilenameWithoutPath>
@@ -686,7 +698,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>218</TopLine>
+      <TopLine>221</TopLine>
       <CurrentLine>224</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c</PathWithFileName>
@@ -702,8 +714,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>877</TopLine>
-      <CurrentLine>878</CurrentLine>
+      <TopLine>859</TopLine>
+      <CurrentLine>892</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_usart.c</FilenameWithoutPath>
@@ -758,7 +770,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>865</TopLine>
+      <TopLine>884</TopLine>
       <CurrentLine>892</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\system_stm32f10x.c</PathWithFileName>
@@ -780,10 +792,10 @@
       <FileType>2</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>39</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>81</TopLine>
-      <CurrentLine>108</CurrentLine>
+      <TopLine>137</TopLine>
+      <CurrentLine>151</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s</PathWithFileName>
       <FilenameWithoutPath>startup_stm32f10x_hd.s</FilenameWithoutPath>
@@ -828,10 +840,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>14</ColumnNumber>
+      <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>3</CurrentLine>
+      <TopLine>54</TopLine>
+      <CurrentLine>178</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\util.c</PathWithFileName>
       <FilenameWithoutPath>util.c</FilenameWithoutPath>
@@ -846,7 +858,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>213</TopLine>
+      <TopLine>230</TopLine>
       <CurrentLine>284</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\W5500\md5.c</PathWithFileName>
@@ -862,7 +874,7 @@
       <Focus>0</Focus>
       <ColumnNumber>52</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>269</TopLine>
+      <TopLine>274</TopLine>
       <CurrentLine>282</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\W5500\socket.c</PathWithFileName>
@@ -876,10 +888,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>26</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>394</TopLine>
-      <CurrentLine>425</CurrentLine>
+      <TopLine>418</TopLine>
+      <CurrentLine>426</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\W5500\w5500.c</PathWithFileName>
       <FilenameWithoutPath>w5500.c</FilenameWithoutPath>
@@ -892,10 +904,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>10</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>25</CurrentLine>
+      <CurrentLine>39</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\W5500\SPI2.c</PathWithFileName>
       <FilenameWithoutPath>SPI2.c</FilenameWithoutPath>
@@ -918,7 +930,7 @@
       <Focus>0</Focus>
       <ColumnNumber>19</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>11</TopLine>
+      <TopLine>12</TopLine>
       <CurrentLine>13</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ZC\src\zc\zc_bc.c</PathWithFileName>
@@ -934,7 +946,7 @@
       <Focus>0</Focus>
       <ColumnNumber>16</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>27</TopLine>
+      <TopLine>46</TopLine>
       <CurrentLine>54</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ZC\src\zc\zc_client_manager.c</PathWithFileName>
@@ -964,10 +976,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>35</TopLine>
-      <CurrentLine>86</CurrentLine>
+      <TopLine>20</TopLine>
+      <CurrentLine>28</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ZC\src\zc\zc_common.c</PathWithFileName>
       <FilenameWithoutPath>zc_common.c</FilenameWithoutPath>
@@ -982,7 +994,7 @@
       <Focus>0</Focus>
       <ColumnNumber>49</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>30</TopLine>
+      <TopLine>49</TopLine>
       <CurrentLine>57</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ZC\src\zc\zc_configuration.c</PathWithFileName>
@@ -998,7 +1010,7 @@
       <Focus>0</Focus>
       <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>252</TopLine>
+      <TopLine>266</TopLine>
       <CurrentLine>283</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ZC\src\zc\zc_message_queue.c</PathWithFileName>
@@ -1014,7 +1026,7 @@
       <Focus>0</Focus>
       <ColumnNumber>61</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>229</TopLine>
+      <TopLine>248</TopLine>
       <CurrentLine>256</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ZC\src\zc\zc_moudle_manager.c</PathWithFileName>
@@ -1030,7 +1042,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>560</TopLine>
+      <TopLine>579</TopLine>
       <CurrentLine>587</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ZC\src\zc\zc_protocol_controller.c</PathWithFileName>
@@ -1046,7 +1058,7 @@
       <Focus>0</Focus>
       <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>343</TopLine>
+      <TopLine>357</TopLine>
       <CurrentLine>383</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ZC\src\zc\zc_sec_engine.c</PathWithFileName>
@@ -1062,7 +1074,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>58</TopLine>
+      <TopLine>73</TopLine>
       <CurrentLine>81</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ZC\src\zc\zc_timer.c</PathWithFileName>
@@ -1164,10 +1176,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>21</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>296</TopLine>
-      <CurrentLine>332</CurrentLine>
+      <TopLine>331</TopLine>
+      <CurrentLine>350</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\ADAPTOR\zc_adapter.c</PathWithFileName>
       <FilenameWithoutPath>zc_adapter.c</FilenameWithoutPath>
@@ -1190,7 +1202,7 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>203</TopLine>
+      <TopLine>206</TopLine>
       <CurrentLine>213</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\AC\src\ac_api.c</PathWithFileName>
@@ -1204,10 +1216,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>15</ColumnNumber>
+      <ColumnNumber>37</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>150</TopLine>
-      <CurrentLine>203</CurrentLine>
+      <TopLine>79</TopLine>
+      <CurrentLine>97</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\AC\src\ac_hal.c</PathWithFileName>
       <FilenameWithoutPath>ac_hal.c</FilenameWithoutPath>
@@ -1230,11 +1242,27 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>10</TopLine>
-      <CurrentLine>19</CurrentLine>
+      <TopLine>779</TopLine>
+      <CurrentLine>780</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\USER\APPs\Internet\dhcp.c</PathWithFileName>
       <FilenameWithoutPath>dhcp.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>10</GroupNumber>
+      <FileNumber>58</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\USER\APPs\Internet\dns.c</PathWithFileName>
+      <FilenameWithoutPath>dns.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

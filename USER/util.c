@@ -3,6 +3,7 @@
 #include "util.h"
 #include "W5500\w5500.h"
 #include <stdio.h>
+#include <string.h>
 #include <stdarg.h>
 #include "systick.h"
 #include "led.h"
@@ -21,7 +22,7 @@ extern CHCONFIG_TYPE_DEF Chconfig_Type_Def;
 extern DHCP_Get     DHCP_GET;
 extern uint8 txsize[MAX_SOCK_NUM];
 extern uint8 rxsize[MAX_SOCK_NUM];
-
+extern uint32 g_u32GloablIp;
 
 extern uint8 MAC[6];
 extern uint8 IP[4];
@@ -103,7 +104,9 @@ void set_w5500_ip(u8 ip_from)
     memcpy(Config_Msg.DNS_Server_IP,GateWay,4);
   }
   
-   
+  memcpy(&g_u32GloablIp,Config_Msg.Lip,4);
+  g_u32GloablIp = htonl(g_u32GloablIp);
+ 
   /*将IP配置信息写入W5500相应寄存器*/	
   setSUBR(Config_Msg.Sub);
   setGAR(Config_Msg.Gw);
@@ -159,7 +162,7 @@ void Reset_W5500(void)
     - Hardware flow control disabled (RTS and CTS signals)
     - Receive and transmit enabled
 *******************************************************************************/
-void USART3_Init(void)
+void USART3_Configuration(void)
 {
     USART_InitTypeDef USART_InitStructure;
     USART_InitStructure.USART_BaudRate = 115200;
@@ -175,6 +178,47 @@ void USART3_Init(void)
   USART_ClearFlag(USART3,USART_FLAG_TC);
     /* Enable the USARTx */
     USART_Cmd(USART3, ENABLE);
+}
+
+/*******************************************************************************
+* Function Name  : USART_Configuration
+* Description    : Configure USART1 
+* Input          : None
+* Output         : None
+* Return         : None
+* Attention		 : None
+*******************************************************************************/
+void USART1_Configuration(void)
+{ 
+  GPIO_InitTypeDef GPIO_InitStructure;
+  USART_InitTypeDef USART_InitStructure; 
+
+  RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOA | RCC_APB2Periph_USART1,ENABLE);
+  /*
+  *  USART1_TX -> PA9 , USART1_RX ->	PA10
+  */				
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;	         
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP; 
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; 
+  GPIO_Init(GPIOA, &GPIO_InitStructure);		   
+
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;	        
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;  
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; 
+  GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+  USART_InitStructure.USART_BaudRate = 115200;
+  USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+  USART_InitStructure.USART_StopBits = USART_StopBits_1;
+  USART_InitStructure.USART_Parity = USART_Parity_No;
+  USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+  USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+
+  USART_Init(USART1, &USART_InitStructure); 
+  USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+  USART_ITConfig(USART1, USART_IT_TXE, ENABLE);
+  USART_ClearFlag(USART1,USART_FLAG_TC);
+  USART_Cmd(USART1, ENABLE);
 }
 
 /*******************************************************************************
@@ -342,16 +386,34 @@ uint32_t time_return(void)
   * @param  None
   * @retval None
   */
+//PUTCHAR_PROTOTYPE
+//{
+//  /* Place your implementation of fputc here */
+//  /* e.g. write a character to the USART */
+//  USART_SendData(USART3, (uint8_t) ch);
+
+//  /* Loop until the end of transmission */
+//  while (USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET)
+//  {}
+//  
+//  return ch;
+//}
+
+/**
+  * @brief  Retargets the C library printf function to the USART.
+  * @param  None
+  * @retval None
+  */
 PUTCHAR_PROTOTYPE
 {
   /* Place your implementation of fputc here */
   /* e.g. write a character to the USART */
-  USART_SendData(USART3, (uint8_t) ch);
+  USART_SendData(USART1, (uint8_t) ch);
 
   /* Loop until the end of transmission */
-  while (USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET)
+  while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET)
   {}
-  
+
   return ch;
 }
 

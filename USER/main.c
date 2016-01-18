@@ -40,8 +40,7 @@ uint16 Dest_PORT = 9100; //DST_IP port
 
 
 uint8 ch_status[MAX_SOCK_NUM] = { 0, }; /** 0:close, 1:ready, 2:connected */
-uint8 TX_BUF[TX_RX_MAX_BUF_SIZE]; // TX Buffer for applications
-uint8 RX_BUF[TX_RX_MAX_BUF_SIZE]; // RX Buffer for applications
+
 
 /* Private function prototypes -----------------------------------------------*/
 void RCC_Configuration(void);
@@ -126,8 +125,8 @@ int main(void)
     NVIC_Configuration(); // NVIC Configuration
     GPIO_Configuration();
 	
-    USART3_Init();	
-
+//    USART3_Configuration();	
+    USART1_Configuration();
 	
     Timer_Configuration();
 	LED_GPIO_Configuration();

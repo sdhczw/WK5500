@@ -762,6 +762,11 @@
                 </FileArmAds>
               </FileOption>
             </File>
+            <File>
+              <FileName>dns.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\APPs\Internet\dns.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

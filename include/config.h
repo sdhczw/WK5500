@@ -94,8 +94,7 @@ typedef struct _CONFIG_TYPE_DEF
 #define TX_RX_MAX_BUF_SIZE	2048
 //#define TX_BUF	0x20004000
 //#define RX_BUF	(TX_BUF+TX_RX_MAX_BUF_SIZE)
-extern uint8 TX_BUF[TX_RX_MAX_BUF_SIZE];
-extern uint8 RX_BUF[TX_RX_MAX_BUF_SIZE];
+
 
 
 #define ApplicationAddress 	0x08004000

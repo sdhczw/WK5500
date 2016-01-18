@@ -60,13 +60,20 @@ ZC_UartBuffer g_struUartBuffer;
 u8  g_u8BcSendBuffer[100];
 u32 g_u32BcSleepCount = 800;
 u8 g_u8RemoteAddr[4];
-
+/*************************************************
+* Function: loopback_tcpc
+* Description: 
+* Author: cxy 
+* Returns: 
+* Parameter: 
+* History:
+*************************************************/
 void loopback_tcpc(SOCKET s)
 {
-        uint16 RSR_len;
-        uint16 received_len;
-	uint8 * data_buf = TX_BUF;
-        u32 u32Timer = 0;
+    uint16 RSR_len;
+    uint16 received_len;
+	uint8 * data_buf = g_u8recvbuffer;
+    u32 u32Timer = 0;
    switch (getSn_SR(s))
    {
    case SOCK_ESTABLISHED:                 /* if connection is established */
@@ -77,10 +84,10 @@ void loopback_tcpc(SOCKET s)
          ZC_Rand(g_struProtocolController.RandMsg);
          PCT_SendCloudAccessMsg1(&g_struProtocolController);
       }
-      if (( received_len=getSn_RX_RSR(s)) > 0)        /* check Rx data */
+      if (( RSR_len=getSn_RX_RSR(s)) > 0)        /* check Rx data */
       {
-       if (received_len > TX_RX_MAX_BUF_SIZE) received_len = HF_MAX_SOCKET_LEN;   /* if Rx data size is lager than TX_RX_MAX_BUF_SIZE */
-       received_len = recv(g_struProtocolController.struCloudConnection.u32Socket, g_u8recvbuffer, received_len); 
+       if (RSR_len > TX_RX_MAX_BUF_SIZE) RSR_len = HF_MAX_SOCKET_LEN;   /* if Rx data size is lager than TX_RX_MAX_BUF_SIZE */
+       received_len = recv(g_struProtocolController.struCloudConnection.u32Socket, g_u8recvbuffer, RSR_len); 
       
       if(received_len > 0) 
       {
@@ -100,6 +107,11 @@ void loopback_tcpc(SOCKET s)
          if (RSR_len > TX_RX_MAX_BUF_SIZE) RSR_len = TX_RX_MAX_BUF_SIZE;   /* if Rx data size is lager than TX_RX_MAX_BUF_SIZE */
                                                                                     /* the data size to read is MAX_BUF_SIZE. */
          received_len = recv(s, data_buf, RSR_len);         /* read the received data */
+         if(received_len > 0) 
+         {
+              ZC_Printf("recv data len = %d\n", received_len);
+              MSG_RecvDataFromCloud(g_u8recvbuffer, received_len);
+          }
       }
       disconnect(s);
       u32Timer = rand();
@@ -145,12 +157,90 @@ void loopback_tcpc(SOCKET s)
                 break;
         }
 }
+/*************************************************
+* Function: loopback_tcps
+* Description: 
+* Author: cxy 
+* Returns: 
+* Parameter: 
+* History:
+*************************************************/
+void loopback_tcps(SOCKET s)
+{
+    uint16 RSR_len;
+    uint16 received_len;
+	uint8 * data_buf = g_u8recvbuffer;
+     switch (getSn_SR(s))
+   {
+   case SOCK_ESTABLISHED:              /* if connection is established */
+      if(ch_status[s]==1)
+      {
+         printf("\r\n%d : Connected",s);
+         printf("\r\n Peer IP : %d.%d.%d.%d", IINCHIP_READ(Sn_DIPR0(s)),  IINCHIP_READ(Sn_DIPR1(s)), IINCHIP_READ(Sn_DIPR2(s)), IINCHIP_READ(Sn_DIPR3(s)) );
+         printf("\r\n Peer Port : %d", ( (uint16)(IINCHIP_READ(Sn_DPORT0(s)))<<8) +(uint16)IINCHIP_READ( Sn_DPORT1(s)) ) ;
+         ch_status[s] = 2;
+         ZC_ClientConnect(s);
+      }
 
-void loopback_udp(SOCKET s, uint16 port)
+      if ((RSR_len = getSn_RX_RSR(s)) > 0)        /* check Rx data */
+      {
+         if (RSR_len > TX_RX_MAX_BUF_SIZE) RSR_len = TX_RX_MAX_BUF_SIZE;   /* if Rx data size is lager than TX_RX_MAX_BUF_SIZE */                                                                           /* the data size to read is MAX_BUF_SIZE. */
+         received_len = recv(s, data_buf, RSR_len);      /* read the received data */
+         ZC_RecvDataFromClient(s, data_buf, received_len);
+      }
+
+      break;
+   case SOCK_CLOSE_WAIT:                              /* If the client request to close */
+      printf("\r\n%d : CLOSE_WAIT", s);
+        if ((RSR_len = getSn_RX_RSR(s)) > 0)     /* check Rx data */
+      {
+                   if (RSR_len > TX_RX_MAX_BUF_SIZE) RSR_len = TX_RX_MAX_BUF_SIZE;  /* if Rx data size is lager than TX_RX_MAX_BUF_SIZE */                                                                     /* the data size to read is MAX_BUF_SIZE. */
+                   received_len = recv(s, data_buf, RSR_len);     /* read the received data */
+                   ZC_RecvDataFromClient(s, data_buf, received_len);
+      }
+      disconnect(s);
+      ZC_ClientDisconnect(s);
+      ch_status[s] = 0;
+      break;
+   case SOCK_CLOSED:                                       /* if a socket is closed */
+      if(!ch_status[s])
+      {
+                   printf("\r\n%d : Loop-Back TCP Server Started. port : %d", s, ZC_SERVER_PORT);
+                   ch_status[s] = 1;
+      }
+      if(socket(s,(Sn_MR_ND|Sn_MR_TCP),ZC_SERVER_PORT,0x00) == 0)    /* reinitialize the socket */
+      {
+                   printf("\r\n%d : Fail to create socket.",s);
+                   ch_status[s] = 0;
+      }
+      else
+      {
+        g_struProtocolController.struClientConnection.u32Socket = s;
+        ZC_StartClientListen();
+      }
+      break;
+        case SOCK_INIT:   /* if a socket is initiated */
+
+                  listen(s);
+                  printf("\r\n%x :LISTEN socket %d ",getSn_SR(s), s);
+                break;
+        default:
+                break;
+   }
+}
+/*************************************************
+* Function: loopback_udp
+* Description: 
+* Author: cxy 
+* Returns: 
+* Parameter: 
+* History:
+*************************************************/
+void loopback_udp(SOCKET s)
 {
    uint16 RSR_len;
-        uint16 received_len;
-	uint8 * data_buf = TX_BUF;
+   uint16 received_len;
+   uint8 * data_buf = g_u8BcSendBuffer;
    uint32 destip = 0;
    uint16 destport;
 
@@ -163,16 +253,21 @@ void loopback_udp(SOCKET s, uint16 port)
 
          /* the data size to read is MAX_BUF_SIZE. */
          received_len = recvfrom(s, data_buf, RSR_len, (uint8*)&destip, &destport);       /* read the received data */
-         if(sendto(s, data_buf, received_len,(uint8*)&destip, destport) == 0) /* send the received data */
-         {
-            printf("\a\a\a%d : System Fatal Error.", s);
-         }
+         ZC_SendClientQueryReq(data_buf, (u16)received_len);
+
       }
       break;
    case SOCK_CLOSED:                                               /* if a socket is closed */
-      printf("\r\n%d : Loop-Back UDP Started. port :%d", s, port);
-      if(socket(s,Sn_MR_UDP,port,0x00)== 0)    /* reinitialize the socket */
+      printf("\r\n%d : Loop-Back UDP Started. port :%d", s, ZC_MOUDLE_PORT);
+      if(socket(s,Sn_MR_UDP,ZC_MOUDLE_PORT,0x00)== 0)    /* reinitialize the socket */
          printf("\a%d : Fail to create socket.",s);
+      else
+      {
+          g_Bcfd = SOCK_UDPC;
+          g_pu8RemoteAddr = g_u8RemoteAddr;
+          memset(g_pu8RemoteAddr,0xff,4);
+          g_u32BcSleepCount = 10000;
+      }
       break;
    }
 }
@@ -241,38 +336,17 @@ void ZC_TimerExpired()
 *************************************************/
 void HF_ReadDataFormFlash(void) 
 {
-    #if 0
-    u32 u32MagicFlag = 0xFFFFFFFF;
-#ifdef __LPT200__
-    hffile_userbin_read(0, (char *)(&u32MagicFlag), 4);
-    if (ZC_MAGIC_FLAG == u32MagicFlag)
+    FLASH_Unlock(); 
+    FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_OPTERR | FLASH_FLAG_WRPRTERR | FLASH_FLAG_PGERR);
+    if (ZC_MAGIC_FLAG == *((__IO u32 *)(0x08000000+0x40000-sizeof(ZC_ConfigDB))))
     {   
-        hffile_userbin_read(0, (char *)(&g_struZcConfigDb), sizeof(ZC_ConfigDB));
+         memcpy((char *)(&g_struZcConfigDb),(u8 *)(0x08000000+0x40000-sizeof(ZC_ConfigDB)),sizeof(ZC_ConfigDB));
     }
     else
     {
         ZC_Printf("no para, use default\n");
     }
-#else
-    hfuflash_read(0, (char *)(&u32MagicFlag), 4);
-    if (ZC_MAGIC_FLAG == u32MagicFlag)
-    {   
-        hfuflash_read(0, (char *)(&g_struZcConfigDb), sizeof(ZC_ConfigDB));
-    }
-    else
-    {
-        ZC_Printf("no para, use default\n");
-    }
-#endif    
-#endif
-    if (ZC_MAGIC_FLAG == *((u32 *)(0x40000-sizeof(ZC_ConfigDB))))
-    {   
-         memcpy((char *)(&g_struZcConfigDb),(u8 *)(0x80000000+0x40000-sizeof(ZC_ConfigDB)),sizeof(ZC_ConfigDB));
-    }
-    else
-    {
-        ZC_Printf("no para, use default\n");
-    }
+     FLASH_Lock();
 }
 
 /*************************************************
@@ -285,18 +359,13 @@ void HF_ReadDataFormFlash(void)
 *************************************************/
 void HF_WriteDataToFlash(u8 *pu8Data, u16 u16Len)
 {
-#if 0
-#ifdef __LPT200__
-    hffile_userbin_write(0, (char*)pu8Data, u16Len);
-#else
-    hfuflash_erase_page(0,1); 
-    hfuflash_write(0, (char*)pu8Data, u16Len);
-#endif
-#endif
     int i = 0;
+    FLASH_Unlock();
+    FLASH_ClearFlag(FLASH_FLAG_EOP| FLASH_FLAG_OPTERR|FLASH_FLAG_PGERR|FLASH_FLAG_WRPRTERR);
+    FLASH_ErasePage(0x08000000+0x40000-sizeof(ZC_ConfigDB));
     for( i = 0;i<sizeof(ZC_ConfigDB)/4;i++)
-    FLASH_ProgramWord(0x80000000+0x40000-sizeof(ZC_ConfigDB) +4*i,*((u32 *)(pu8Data +4*i)));
-
+    FLASH_ProgramWord(0x08000000+0x40000-sizeof(ZC_ConfigDB) +4*i,*((u32 *)(pu8Data +4*i)));
+    FLASH_Lock();
 }
 
 /*************************************************
@@ -644,12 +713,14 @@ void HF_BcInit()
 void HF_Cloudfunc() 
 {
     g_struProtocolController.struCloudConnection.u32Socket = SOCK_TCPC;
-    HF_BcInit();
+    //HF_BcInit();
     ZC_TimerExpired();
 
     PCT_Run();
 
     loopback_tcpc(SOCK_TCPC);
+    loopback_tcps(SOCK_TCPS);
+    loopback_udp(SOCK_UDPC);
 
     ZC_SendBc();
 
