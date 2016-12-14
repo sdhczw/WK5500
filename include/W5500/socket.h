@@ -10,8 +10,8 @@
 
 #include "Types.h"
 #define SOCK_TCPC             1
-#define SOCK_UDPR             0
-#define SOCK_UDPT             2
+#define SOCK_TCPHTTPOTA       0
+#define SOCK_UDPNTP           2
 #define SOCK_UDPC             3
 #define SOCK_DHCP             4
 #define SOCK_DNS              5

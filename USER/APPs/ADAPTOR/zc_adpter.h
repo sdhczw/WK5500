@@ -17,7 +17,7 @@
 
 
 
-#define HF_MAX_SOCKET_LEN    (1000)
+#define HF_MAX_SOCKET_LEN    (TX_RX_MAX_BUF_SIZE)
 
 #define  RET_FAIL           0
 #define  RET_SUCCESS        1
@@ -29,7 +29,7 @@ extern "C" {
 void ZC_Init(void);
 void HF_WakeUp(void);
 void HF_Sleep(void);
-void HF_WriteDataToFlash(u8 *pu8Data, u16 u16Len);
+u32 HF_WriteDataToFlash(u8 *pu8Data, u16 u16Len);
 void HF_Cloudfunc(void); 
 #ifdef __cplusplus
 }

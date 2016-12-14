@@ -11,3 +11,4 @@
 *.lib
 si/*
 !/sdk/1.50/libs.rar
+/MDK-ARM/*.bak

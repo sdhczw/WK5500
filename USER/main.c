@@ -11,6 +11,7 @@
 #include "systick.h"
 #include "led.h"
 #include "zc_adpter.h"
+#include "ac_hal.h"
 #include <string.h>
 #include <stdlib.h>
 
@@ -37,7 +38,7 @@ uint8 rxsize[MAX_SOCK_NUM] = {2,2,2,2,2,2,2,2};
 //Configuration Network Information of TEST PC
 
 
-uint8 ch_status[MAX_SOCK_NUM] = { 0, }; /** 0:close, 1:ready, 2:connected */
+uint8 ch_status[MAX_SOCK_NUM] = { 0 }; /** 0:close, 1:ready, 2:connected */
 
 
 /* Private function prototypes -----------------------------------------------*/
@@ -134,6 +135,7 @@ int main(void)
     WIZ_SPI_Init();
 
     ZC_Init();
+    AC_Init();
     WIZ_Config(); // network config & Call Set_network ();
     Get_ChipInfo();
     presentTime = my_time; // For TCP client's connection request delay

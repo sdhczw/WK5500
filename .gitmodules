@@ -1,0 +1,6 @@
+[submodule "USER/APPs/ZC"]
+	path = USER/APPs/ZC
+	url = git@git.ablecloud.cn:c/zc.git
+[submodule "USER/APPs/AC"]
+	path = USER/APPs/AC
+	url = git@git.ablecloud.cn:c/ac.git
